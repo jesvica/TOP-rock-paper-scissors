@@ -107,6 +107,11 @@ button:hover {
     font-weight: 600;    
 }
 
+button:active img {
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
 button img {
     height: 20rem;
     width: auto;
