@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="rules-button">RULES</button>
+
+            <!--Pop up rules modal-->
+            <div id="rules-modal" class="hidden">
+                <div class="modal-content">
+                    <h3>THE SKELETONS CHALLENGE</h3>
+                    <p>Defeat the skeleton by reaching 5 points first</p>
+                    <p>Each round, choose rock, paper, or scissors</p>
+                    <p>The skeleton will do the same</p>
+                    <br>
+                    <p>Rock beats scissors</p>
+                    <p>Scissors beats paper</p>
+                    <p>Paper beats rock</p>
+                    <p>Matching choices result in a tie</p>
+                    <br>
+                    <p>Press restart to play again</p>
+                    <br>
+                    <button id="close-modal">CLOSE</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <h1>SKELETON SHOWDOWN</h1>
+
+    <h3>CHOOSE YOUR MOVE</h3>
+
+    <!--Rock paper scissors images/buttons-->
+    <section id="button-section">
+        <div id="button-container">
+            <button id="rock">
+                <img src="images/rock-img.jpg" alt="Skeleton hand doing a rock hand sign">
+            </button>
+
+            <button id="paper">
+                <img src="images/paper-img.jpg" alt="Skeleton hand doing a paper hand sign">
+            </button>
+
+            <button id="scissors">
+                <img src="images/scissors-img.jpg" alt="Skeleton hand doing a scissors hand sign">
+            </button>
+        </div>
+    </section>
+
+    <!--Display round winner-->
+    <h2 id="round-winner"></h2>
+
+    <!--Score section-->
+    <section id="score-section">
+        <h2 id="human-score"></h2>
+        <h2 id="comp-score"></h2>
+    </section>
+
+    <!--Game winner & restart game-->
+    <div id="game-over-modal" class="hidden">
+    <div class="modal-content">
+        <img id="modal-image" src="" alt="Game over image">
+        <h2 id="overall-winner"></h2>
+        <button id="restart">RESTART</button>
+    </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
