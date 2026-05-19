@@ -3,12 +3,25 @@
 /* Main styling */
 /* html {
     min-height: 100vh;
-    background-image: url('images/wallpaper.jpeg');
+    /* background-image: url('images/wallpaper.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 } */
 
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 
 /*----- Nav styling -----*/
 nav {
@@ -189,4 +202,26 @@ button img {
     background: white;
     padding: 4rem 6rem;
     text-align: center;
+}
+
+/*----- Footer -----*/
+footer {
+    margin: 10px;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#signature {
+    margin: 0 0 5px 0;
 }
